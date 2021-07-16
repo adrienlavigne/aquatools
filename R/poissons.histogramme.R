@@ -51,7 +51,7 @@ poissons.histogramme <- function(
     MdMsMeCs <- MdMsMeCs + theme(strip.text = element_text(size = rel(1)))
     MdMsMeCs <-  MdMsMeCs + theme (axis.text.x = element_text(face="bold", size=8))
     if(max(CapturesV2$nombre) < 5){MdMsMeCs <-  MdMsMeCs + ylim(0,5)}
-    if(max(CapturesV2$nombre) < 5){MdMsMeCs <- MdMsMeCs + xlim (0,300)}
+    if(max(CapturesV2$nombre) < 5){MdMsMeCs <- MdMsMeCs + xlim (0,300)} ##########supprimer xlim#######
     MdMsMeCs <- MdMsMeCs + theme(legend.position='none')
     MdMsMeCs
     
@@ -92,7 +92,7 @@ poissons.histogramme <- function(
     MUdMsMUeCs <- MUdMsMUeCs + theme(strip.text = element_text(size = rel(1)))
     MUdMsMUeCs <-  MUdMsMUeCs + theme (axis.text.x = element_text(face="bold", size=8))
     if(max(CapturesV2$nombre) < 5){MUdMsMUeCs <-  MUdMsMUeCs + ylim(0,5)}
-    if(max(CapturesV2$nombre) < 5){MUdMsMUeCs <- MUdMsMUeCs + xlim (0,300)}
+    if(max(CapturesV2$nombre) < 5){MUdMsMUeCs <- MUdMsMUeCs + xlim (0,300)}##########supprimer xlim#######
     MUdMsMUeCs <- MUdMsMUeCs + theme(legend.position='none')
     MUdMsMUeCs
     
